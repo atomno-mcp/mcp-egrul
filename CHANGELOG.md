@@ -11,8 +11,29 @@
 
 ### Запланировано
 
-- Публикация в `atomno-labs/mcp-egrul` (GitHub) и PyPI после ревизии портфеля.
 - Карточка в каталоге [programmatic-mcp-ru](https://github.com/atomno-labs/programmatic-mcp-ru).
+- PR в `modelcontextprotocol/servers` после получения badge от Glama.
+- PR в `punkpeye/awesome-mcp-servers` после получения badge от Glama.
+
+---
+
+## [0.1.1] — 2026-04-26
+
+Catalog-патч. Основной код пакета не меняется — добавлены метаданные для
+индексации в каталогах MCP-серверов.
+
+### Добавлено
+
+- **`smithery.yaml`** в корне репо — конфиг для Smithery.ai (stdio-режим,
+  опциональный `ATOMNO_API_KEY` для Hosted Pro, выбор log-level).
+- **`glama.json`** в корне репо — claim ownership на Glama.ai под org
+  `atomno-labs`.
+- **Первая публикация на PyPI** — `pip install mcp-egrul` или
+  `uvx mcp-egrul`.
+
+### Изменено
+
+- README дополнен секцией про установку через PyPI.
 
 ---
 
@@ -85,5 +106,6 @@
 
 MIT (`LICENSE` в корне пакета).
 
-[Unreleased]: https://github.com/atomno-labs/mcp-egrul/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/atomno-labs/mcp-egrul/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/atomno-labs/mcp-egrul/releases/tag/v0.1.1
 [0.1.0]: https://github.com/atomno-labs/mcp-egrul/releases/tag/v0.1.0

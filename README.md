@@ -2,7 +2,7 @@
 
 > MCP-сервер (Model Context Protocol — открытый протокол подключения AI-ассистентов к внешним инструментам) для работы с ЕГРЮЛ (Единый Государственный Реестр Юридических Лиц РФ) и ЕГРИП (Единый Государственный Реестр Индивидуальных Предпринимателей). Источник — официальные open-data дампы ФНС (Федеральной налоговой службы).
 
-**Статус:** `v0.1.0` — open-версия (self-host через SQLite) полностью готова + клиентская часть hosted Pro (HTTP-клиент `HostedClient` для `api.atomno.ru`). Сама hosted Pro-инфра — в активной разработке (см. CHANGELOG). **Coverage `100.00%`** (345 тестов, ruff clean, fastmcp 3.2.4, enforced через `--cov-fail-under=100`).
+**Статус:** `v0.1.1` — open-версия (self-host через SQLite) полностью готова + клиентская часть hosted Pro (HTTP-клиент `HostedClient` для `api.atomno.ru`). Опубликована на [PyPI](https://pypi.org/project/mcp-egrul/), индексирована в [Glama](https://glama.ai/mcp/servers) и [Smithery](https://smithery.ai/). Сама hosted Pro-инфра — в активной разработке. **Coverage `100.00%`** (345 тестов, ruff clean, fastmcp 3.2.4, enforced через `--cov-fail-under=100`).
 
 **Парный проект:** [`mcp-fns-check`](https://github.com/atomno-labs/mcp-fns-check) (risk-чек-слой поверх ЕГРЮЛ).
 
@@ -28,12 +28,30 @@
 
 ---
 
-## Установка (dev)
+## Установка
+
+### Вариант 1 — через PyPI (рекомендуется для пользователей)
+
+```bash
+# Без локального clone — работает «из коробки»
+uvx mcp-egrul
+
+# Или установка глобально
+pipx install mcp-egrul
+mcp-egrul
+
+# Или классический pip в venv
+pip install mcp-egrul
+mcp-egrul
+```
+
+### Вариант 2 — dev-режим (для разработчиков)
 
 Требуется Python 3.11+ и [`uv`](https://docs.astral.sh/uv/) (быстрая замена pip, опционально).
 
 ```bash
-cd apps/mcp-egrul
+git clone https://github.com/atomno-labs/mcp-egrul
+cd mcp-egrul
 uv venv
 uv pip install -e ".[dev]"
 ```
@@ -63,7 +81,8 @@ mcp-egrul
 {
   "mcpServers": {
     "egrul": {
-      "command": "mcp-egrul"
+      "command": "uvx",
+      "args": ["mcp-egrul"]
     }
   }
 }
@@ -75,11 +94,14 @@ mcp-egrul
 {
   "mcpServers": {
     "egrul": {
-      "command": "mcp-egrul"
+      "command": "uvx",
+      "args": ["mcp-egrul"]
     }
   }
 }
 ```
+
+> Если не используете `uv`, замените `"command": "uvx", "args": ["mcp-egrul"]` на `"command": "mcp-egrul"` (требует `pip install mcp-egrul` или `pipx install mcp-egrul`).
 
 ---
 

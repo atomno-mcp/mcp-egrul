@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mcp-egrul"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server for Russian EGRUL / EGRIP lookups via ФНС open-data (search, cards, founders, director, bulk)."
 readme = "README.md"
 requires-python = ">=3.11"
