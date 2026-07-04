@@ -1,8 +1,10 @@
+<!-- mcp-name: io.github.atomno-labs/mcp-egrul -->
+
 # mcp-egrul
 
 > MCP-сервер (Model Context Protocol — открытый протокол подключения AI-ассистентов к внешним инструментам) для работы с ЕГРЮЛ (Единый Государственный Реестр Юридических Лиц РФ) и ЕГРИП (Единый Государственный Реестр Индивидуальных Предпринимателей). Источник — официальные open-data дампы ФНС (Федеральной налоговой службы).
 
-**Статус:** `v0.1.2` — open-версия (self-host через SQLite) полностью готова + клиентская часть hosted Pro (HTTP-клиент `HostedClient` для `api.atomno.ru`). Опубликована на [PyPI](https://pypi.org/project/atomno-mcp-egrul/), индексирована в [Glama](https://glama.ai/mcp/servers) и [Smithery](https://smithery.ai/). Сама hosted Pro-инфра — в активной разработке. **Coverage `100.00%`** (345 тестов, ruff clean, fastmcp 3.2.4, enforced через `--cov-fail-under=100`).
+**Статус:** `v0.1.2` — open-версия (self-host через SQLite) полностью готова + клиентская часть hosted Pro (HTTP-клиент `HostedClient` для `api.atomno-labs.ru`). Опубликована на [PyPI](https://pypi.org/project/atomno-mcp-egrul/), индексирована в [Glama](https://glama.ai/mcp/servers) и [Smithery](https://smithery.ai/). Сама hosted Pro-инфра — в активной разработке. **Coverage `100.00%`** (345 тестов, ruff clean, fastmcp 3.2.4, enforced через `--cov-fail-under=100`).
 
 **Парный проект:** [`mcp-fns-check`](https://github.com/atomno-labs/mcp-fns-check) (risk-чек-слой поверх ЕГРЮЛ).
 
@@ -188,7 +190,7 @@ Exit-коды `atomno-mcp-egrul-import`:
 
 ---
 
-## Pro / hosted-режим (прокси на `api.atomno.ru`)
+## Pro / hosted-режим (прокси на `api.atomno-labs.ru`)
 
 Когда пользователь задаёт `ATOMNO_API_KEY`, **все семь тулзов** автоматически
 проксируются на hosted Pro API (SPEC §5.4, §5.4.1). Локальный SQLite в этом
@@ -245,8 +247,8 @@ Exit-коды `atomno-mcp-egrul-import`:
 | `MCP_EGRUL_DUMPS_DIR` | Каталог с дампами ФНС, структура `<dir>/<registry>/<YYYY-MM-DD>/*.zip` | `./dumps` |
 | `MCP_EGRUL_LOG_LEVEL` | Уровень логирования | `INFO` |
 | `TZ` | Таймзона для scheduler (cron 03:00) | `Europe/Moscow` |
-| `ATOMNO_API_KEY` | (Pro) ключ hosted-подписки — включает проксирование на `api.atomno.ru` | не задан |
-| `ATOMNO_API_BASE` | (Pro) базовый URL hosted-API | `https://api.atomno.ru/mcp-egrul/v1` |
+| `ATOMNO_API_KEY` | (Pro) ключ hosted-подписки — включает проксирование на `api.atomno-labs.ru` | не задан |
+| `ATOMNO_API_BASE` | (Pro) базовый URL hosted-API | `https://api.atomno-labs.ru/mcp-egrul/v1` |
 
 Пример — см. `.env.example`.
 
@@ -341,7 +343,7 @@ pytest -v --cov=src/mcp_egrul
 * `HostedClient` (hosted Pro API proxy) — happy-path всех 7 методов, все HTTP-ошибки из
   SPEC §5.4.1 (401/403/404/413/429/5xx), timeout/ConnectError, невалидный JSON/payload от
   сервера, клиентская валидация bulk, `async with`-контекст; плюс маршрутизация из тулзов
-  в hosted-режиме (при задан `ATOMNO_API_KEY` — запрос идёт в `api.atomno.ru`, не в SQLite,
+  в hosted-режиме (при задан `ATOMNO_API_KEY` — запрос идёт в `api.atomno-labs.ru`, не в SQLite,
   валидация ИНН до HTTP);
 * edge-case'ы XML-парсера (75 отдельных unit-тестов на `_parse_company`/`_parse_ie`/
   `_parse_share`/`_parse_director`/`_parse_founders`/address fallback'ы/legacy-атрибуты/
