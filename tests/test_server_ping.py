@@ -439,7 +439,7 @@ async def test_service_context_reentry_is_noop(
         http_timeout_seconds=5.0,
         log_level="INFO",
         hosted_api_key=None,
-        hosted_api_base="https://api.atomno.ru/mcp-egrul/v1",
+        hosted_api_base="https://api.atomno-mcp.ru/mcp-egrul/v1",
     )
     store = SQLiteStore(cfg.db_path)
     ctx = ServiceContext.for_testing(store=store, config=cfg)

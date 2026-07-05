@@ -17,6 +17,19 @@
 
 ---
 
+## [0.1.5] — 2026-07-05
+
+### Changed
+
+- Канонический hosted Pro-эндпоинт переведён на новый бренд-домен:
+  `api.atomno-labs.ru` → `api.atomno-mcp.ru` (`ATOMNO_API_BASE` по умолчанию,
+  `HOSTED_API_BASE_DEFAULT`, `server.json`, `smithery.yaml`, `.env.example`,
+  README, тесты). Путь `/mcp-egrul/v1` сохранён.
+- GitHub-организация переименована `atomno-labs` → `atomno-mcp`; обновлены
+  ссылки на репозиторий, `io.github.*` namespace MCP-реестра и workflow.
+
+---
+
 ## [0.1.3] — 2026-04-26
 
 Sync-патч с эталоном `atomno-mcp-fns-check 0.1.1`. Релиз приводит CLI-обвязку,

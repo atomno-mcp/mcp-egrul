@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "atomno-mcp-egrul"
-version = "0.1.4"
+version = "0.1.5"
 description = "MCP server for Russian EGRUL / EGRIP lookups via ФНС open-data (search, cards, founders, director, bulk)."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -55,11 +55,11 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/atomno-labs/mcp-egrul"
-Repository = "https://github.com/atomno-labs/mcp-egrul"
-Issues = "https://github.com/atomno-labs/mcp-egrul/issues"
-Changelog = "https://github.com/atomno-labs/mcp-egrul/blob/main/CHANGELOG.md"
-Documentation = "https://github.com/atomno-labs/mcp-egrul#readme"
+Homepage = "https://github.com/atomno-mcp/mcp-egrul"
+Repository = "https://github.com/atomno-mcp/mcp-egrul"
+Issues = "https://github.com/atomno-mcp/mcp-egrul/issues"
+Changelog = "https://github.com/atomno-mcp/mcp-egrul/blob/main/CHANGELOG.md"
+Documentation = "https://github.com/atomno-mcp/mcp-egrul#readme"
 
 [project.scripts]
 atomno-mcp-egrul = "mcp_egrul.server:main"

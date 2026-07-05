@@ -51,7 +51,7 @@ from mcp_egrul.tools.search_by_inn import search_by_inn
 from mcp_egrul.tools.search_by_name import search_by_name
 from mcp_egrul.tools.search_by_ogrn import search_by_ogrn
 
-BASE_URL = "https://api.atomno.ru/mcp-egrul/v1"
+BASE_URL = "https://api.atomno-mcp.ru/mcp-egrul/v1"
 
 
 # ---------------------------------------------------------------------------

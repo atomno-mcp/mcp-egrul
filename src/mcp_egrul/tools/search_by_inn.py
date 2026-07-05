@@ -4,7 +4,7 @@
     * 10 цифр → `companies` → `CompanyCard`.
     * 12 цифр → `individual_entrepreneurs` → `IECard`.
 
-В hosted-режиме (`ATOMNO_API_KEY` задан) запрос идёт в `api.atomno.ru`
+В hosted-режиме (`ATOMNO_API_KEY` задан) запрос идёт в `api.atomno-mcp.ru`
 через `HostedClient` — локальный SQLite не трогается. Silent fallback
 на локальный слепок запрещён: иначе AI-агент подумает что получил
 свежие данные от Pro, а на деле они из устаревшего дампа.

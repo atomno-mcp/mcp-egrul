@@ -6,7 +6,7 @@
       `MCP_EGRUL_DUMPS_DIR/<registry>/<YYYY-MM-DD>/` и стримит их в SQLite
       через `opendata_parser.iter_dump_records`.
     * `hosted_adapter.HostedClient` — HTTP-прокси на hosted Pro API
-      `api.atomno.ru/mcp-egrul/v1` (SPEC §5.4.1). НЕ `Source`, а отдельный
+      `api.atomno-mcp.ru/mcp-egrul/v1` (SPEC §5.4.1). НЕ `Source`, а отдельный
       клиент для тул-слоя: когда пользователь задал `ATOMNO_API_KEY`,
       запросы в MCP-тулзах идут через него (свежие данные, bulk без
       rate-limit), а не через локальный SQLite.

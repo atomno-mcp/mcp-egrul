@@ -119,7 +119,7 @@ DEFAULT_USER_AGENT: Final[str] = (
 # Hosted proxy (Pro).
 # ---------------------------------------------------------------------------
 
-HOSTED_API_BASE_DEFAULT: Final[str] = "https://api.atomno.ru/mcp-egrul/v1"
+HOSTED_API_BASE_DEFAULT: Final[str] = "https://api.atomno-mcp.ru/mcp-egrul/v1"
 
 # ---------------------------------------------------------------------------
 # Имена env-переменных — в одном месте, чтобы не разъезжались между

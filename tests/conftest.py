@@ -35,7 +35,7 @@ def config(tmp_db_path: Path, tmp_path: Path) -> Config:
         http_timeout_seconds=5.0,
         log_level="INFO",
         hosted_api_key=None,
-        hosted_api_base="https://api.atomno.ru/mcp-egrul/v1",
+        hosted_api_base="https://api.atomno-mcp.ru/mcp-egrul/v1",
     )
 
 

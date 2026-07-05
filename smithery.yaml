@@ -10,13 +10,13 @@ startCommand:
       atomnoApiKey:
         type: string
         description: >-
-          API key for atomno.ru Hosted Pro mode (optional).
+          API key for atomno-mcp.ru Hosted Pro mode (optional).
           Without key the server runs in OSS mode using a local SQLite database
           (≥30 GB) populated from FNS open-data dumps.
       atomnoApiBase:
         type: string
-        default: https://api.atomno.ru/mcp-egrul/v1
-        description: Base URL of the atomno.ru Hosted Pro endpoint (only used if atomnoApiKey is set).
+        default: https://api.atomno-mcp.ru/mcp-egrul/v1
+        description: Base URL of the atomno-mcp.ru Hosted Pro endpoint (only used if atomnoApiKey is set).
       logLevel:
         type: string
         enum:
@@ -35,7 +35,7 @@ startCommand:
       args: ['atomno-mcp-egrul'],
       env: {
         ATOMNO_API_KEY: config.atomnoApiKey || '',
-        ATOMNO_API_BASE: config.atomnoApiBase || 'https://api.atomno.ru/mcp-egrul/v1',
+        ATOMNO_API_BASE: config.atomnoApiBase || 'https://api.atomno-mcp.ru/mcp-egrul/v1',
         MCP_EGRUL_LOG_LEVEL: config.logLevel || 'INFO'
       }
     })

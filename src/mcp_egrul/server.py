@@ -62,7 +62,7 @@ mcp: FastMCP = FastMCP(
         "MCP-сервер для ЕГРЮЛ/ЕГРИП РФ. Семь тулзов: search_by_inn, "
         "search_by_ogrn, search_by_name, get_full_card, get_founders, "
         "get_director, bulk_cards. Источник — официальные open-data "
-        "дампы ФНС; в hosted-режиме — api.atomno.ru."
+        "дампы ФНС; в hosted-режиме — api.atomno-mcp.ru."
     ),
 )
 
@@ -245,7 +245,7 @@ def _build_arg_parser() -> argparse.ArgumentParser:
         prog="atomno-mcp-egrul",
         description=(
             "MCP-сервер для ЕГРЮЛ/ЕГРИП РФ: восемь тулзов поиска и карточек "
-            "юр.лиц/ИП через open-data ФНС или hosted-эндпоинт api.atomno.ru."
+            "юр.лиц/ИП через open-data ФНС или hosted-эндпоинт api.atomno-mcp.ru."
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )

@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.atomno-labs/mcp-egrul",
+  "name": "io.github.atomno-mcp/mcp-egrul",
   "description": "EGRUL/EGRIP company registry lookup for Russian legal entities and entrepreneurs.",
   "repository": {
-    "url": "https://github.com/atomno-labs/mcp-egrul",
+    "url": "https://github.com/atomno-mcp/mcp-egrul",
     "source": "github"
   },
   "version": "0.1.4",
@@ -20,7 +20,7 @@
       "environmentVariables": [
         {
           "name": "ATOMNO_API_KEY",
-          "description": "API key (Pro tier) for hosted mode on api.atomno-labs.ru. Self-host via local SQLite works without it.",
+          "description": "API key (Pro tier) for hosted mode on api.atomno-mcp.ru. Self-host via local SQLite works without it.",
           "isRequired": false,
           "isSecret": true
         }
