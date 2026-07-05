@@ -112,7 +112,7 @@ SCHEDULER_MISFIRE_GRACE_SECONDS: Final[int] = 3600
 
 DEFAULT_HTTP_TIMEOUT_SECONDS: Final[float] = 30.0
 DEFAULT_USER_AGENT: Final[str] = (
-    "mcp-egrul/0.1 (+https://github.com/atomno-labs/mcp-egrul)"
+    "mcp-egrul/0.1 (+https://github.com/atomno-mcp/mcp-egrul)"
 )
 
 # ---------------------------------------------------------------------------

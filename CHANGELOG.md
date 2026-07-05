@@ -11,7 +11,7 @@
 
 ### Запланировано
 
-- Карточка в каталоге [programmatic-mcp-ru](https://github.com/atomno-labs/programmatic-mcp-ru).
+- Карточка в каталоге [programmatic-mcp-ru](https://github.com/atomno-mcp/programmatic-mcp-ru).
 - PR в `modelcontextprotocol/servers` после получения badge от Glama.
 - PR в `punkpeye/awesome-mcp-servers` после получения badge от Glama.
 
@@ -34,7 +34,7 @@
 
 Sync-патч с эталоном `atomno-mcp-fns-check 0.1.1`. Релиз приводит CLI-обвязку,
 ограничения зависимостей и метаданные `pyproject.toml` к общим конвенциям
-портфеля `atomno-mcp-*` ([MCP_BUILD_CHECKLIST.md](https://github.com/atomno-labs)).
+портфеля `atomno-mcp-*` ([MCP_BUILD_CHECKLIST.md](https://github.com/atomno-mcp)).
 
 ### Fixed
 
@@ -216,8 +216,8 @@ Catalog-патч. Основной код пакета не меняется —
 
 MIT (`LICENSE` в корне пакета).
 
-[Unreleased]: https://github.com/atomno-labs/mcp-egrul/compare/v0.1.3...HEAD
-[0.1.3]: https://github.com/atomno-labs/mcp-egrul/releases/tag/v0.1.3
-[0.1.2]: https://github.com/atomno-labs/mcp-egrul/releases/tag/v0.1.2
-[0.1.1]: https://github.com/atomno-labs/mcp-egrul/releases/tag/v0.1.1
-[0.1.0]: https://github.com/atomno-labs/mcp-egrul/releases/tag/v0.1.0
+[Unreleased]: https://github.com/atomno-mcp/mcp-egrul/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/atomno-mcp/mcp-egrul/releases/tag/v0.1.3
+[0.1.2]: https://github.com/atomno-mcp/mcp-egrul/releases/tag/v0.1.2
+[0.1.1]: https://github.com/atomno-mcp/mcp-egrul/releases/tag/v0.1.1
+[0.1.0]: https://github.com/atomno-mcp/mcp-egrul/releases/tag/v0.1.0

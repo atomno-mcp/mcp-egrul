@@ -9,7 +9,7 @@ description = "MCP server for Russian EGRUL / EGRIP lookups via ФНС open-data
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-authors = [{ name = "atomno-labs" }]
+authors = [{ name = "atomno-mcp" }]
 keywords = [
   "mcp",
   "fns",
