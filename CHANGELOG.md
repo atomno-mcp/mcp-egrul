@@ -9,6 +9,12 @@
 
 ## [Unreleased]
 
+## [0.1.6] — 2026-07-06
+
+### Changed
+
+- Обновлены метаданные пакета PyPI: автор и контактный email переведены на бренд `atomno-mcp` (`hello@atomno-mcp.ru`).
+
 ### Запланировано
 
 - Карточка в каталоге [programmatic-mcp-ru](https://github.com/atomno-mcp/programmatic-mcp-ru).

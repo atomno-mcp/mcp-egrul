@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "atomno-mcp-egrul"
-version = "0.1.5"
+version = "0.1.6"
 description = "MCP server for Russian EGRUL / EGRIP lookups via ФНС open-data (search, cards, founders, director, bulk)."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-authors = [{ name = "atomno-mcp" }]
+authors = [{ name = "atomno-mcp", email = "hello@atomno-mcp.ru" }]
 keywords = [
   "mcp",
   "fns",
