@@ -1,18 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "mcp-egrul",
+  "name": "io.github.atomno-mcp/mcp-egrul",
+  "title": "mcp-egrul",
   "description": "EGRUL/EGRIP company registry lookup for Russian legal entities and entrepreneurs.",
   "repository": {
     "url": "https://github.com/atomno-mcp/mcp-egrul",
     "source": "github"
   },
-  "version": "0.1.8",
+  "version": "0.1.10",
   "packages": [
     {
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "atomno-mcp-egrul",
-      "version": "0.1.8",
+      "version": "0.1.10",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
